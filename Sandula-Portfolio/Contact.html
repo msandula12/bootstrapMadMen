@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<!--below is same for each page-->
+	<head>
+		<link rel="shortcut icon" href="Images/ms-logo.png" type="image/png"/>
+		<script src="Contact.js"></script>
+		<link href="Style.css" type="text/css" rel="stylesheet" />
+		<title>Michael Sandula</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<h1>Michael Sandula</h1>
+			</div>
+			<div id="nav">
+				<ul>
+					<li><a href="Index.html">Home</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a class="active" href="Contact.html">Contact</a></li>
+				</ul>
+			</div>
+<!--below is different for each page-->
+			<div id="content">
+				<br />
+				<h3>Looking for more?</h3>
+				<p>Follow me on <a href="https://twitter.com/msandula">Twitter</a> or <a href="https://www.facebook.com/mike.sandula">Facebook</a>.</p><br />
+				<h3>Still not satisfied?</h3>
+				<!--begin contact form-->
+				<form id="myForm" name="form">
+					<fieldset class="contact">
+						<legend>Drop me a line!</legend>
+						<div class="contact-info">
+							<label>Name:
+							<input id="name" type="text" name="name" placeholder="Joe Smith" /></label><br />
+						</div>
+						<div class="contact-info">
+							<label>Email:
+							<input id="email" type="email" name="email" placeholder="jsmith@email.com" /></label><br />
+						</div>
+						<br />
+						<div>
+							<textarea id="message" onfocus="clearContents(this)" name="message">Message ...</textarea>
+						</div>
+						<br />
+						<div>
+							<input id="submit" type="submit" name="send" value="Send" onclick="displayOutput(message.value)"/>
+						</div>
+					</fieldset>
+				</form>
+				<p type="text" id="result"></p>
+				<br />
+				<h3>Or maybe you're just bored?</h3>
+					<form class="bored" name="form">
+						<input id="bored" class="input" name="bored" placeholder="Make your words unboring!" length="50"><br /><br /><br />
+						<button id="unBored" class="submit" type="button" onclick="unBore(this)">Get unbored!</button><br />
+					</form>
+			</div>
+			<div id="footer">
+				<p>Copyright &copy;2016 Michael Sandula</p>
+			</div>
+		</div>
+	</body>
+</html>
